@@ -9,5 +9,6 @@ class DecrementCounter: Counter {
         count -= decrementEvent.amountToDecrement
     }
 
+
     override fun getCount(): Int = count
 }

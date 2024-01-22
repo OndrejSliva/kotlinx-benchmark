@@ -9,5 +9,7 @@ class IncrementCounter: Counter {
         count += incrementEvent.amountToIncrement
     }
 
+
+
     override fun getCount(): Int = count
 }

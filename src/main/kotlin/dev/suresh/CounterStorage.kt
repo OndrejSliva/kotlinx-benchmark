@@ -13,6 +13,7 @@ class CounterStorage(private val counters: List<Counter>) {
     private val decrementCounters = counters.filterIsInstance<DecrementCounter>()
 
     fun getAll(countEvent: CountEvent): List<Counter> {
+//        return incrementCounters
         return when (countEvent) {
             is IncrementEvent -> incrementCounters
             is DecrementEvent -> decrementCounters
